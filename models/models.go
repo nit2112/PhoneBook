@@ -1,8 +1,8 @@
-package modlels
+package models
 
 import (
-	"time"
-	""gopkg.in/mgo.v2/bson""
+	// "time"
+	"gopkg.in/mgo.v2/bson"
 )
 
 type (
@@ -11,8 +11,8 @@ type (
 		FirstName	   string			   `json:"firstname"`
 		LastName	   string			   `json:"lastname"`
 		Email		   string			   `json:"email"`
-		password	   string			   `json:"password"`
-		HashPassword   string			   `json:"hashpassword,omitempty"`
+		Password	   string			   `json:"password"`
+		HashPassword   []byte			   `json:"hashpassword,omitempty"`
 	}
 
 	Number struct {
@@ -21,5 +21,6 @@ type (
 		Name 			string			  `json:"name"`
 		Mobile			string			  `json:"number"`
 		Description		string 			  `json:"description"`
+		CreatedOn 		string			`json:"createdon,omitempty"`
 	}
 )

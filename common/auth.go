@@ -33,7 +33,7 @@ func initKeys (){
 }
 
 func GenerateJWT(name , role string) (string, error) {
-	t := jwt.New(jwt.GetSigningMethod(RS256))
+	t := jwt.New(jwt.GetSigningMethod("RS256"))
 	t.Claims["iss"] = "admin"
 	t.Claims["UserInfo"] = struct {
 		Name string

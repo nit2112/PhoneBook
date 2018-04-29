@@ -1,0 +1,8 @@
+{
+  "Server"      : "127.0.0.1:6060",
+  "MongoDBHost" : "127.0.0.1",
+  "MongoDBUser"	: "",
+  "MongoDBPwd"	: "",
+  "Database"    : "phonedb",
+  "LogLevel"    : 4
+}
